@@ -412,6 +412,19 @@
                         </div>
                     </div>
                     
+                    <div class = "css-item">
+                        <div class = "css-item-words">
+                            <h3 class = "css-item-title">.darkize & .lightize</h3>
+                            <p class = "css-item-description"> 
+                                By using the <strong>.darkize</strong> and <strong>.lightize</strong> The color of the text within the objects with those <a class = "linker">shahaf.css</a> styling elements will be dark / light.
+                                <br><br>
+                            </p>
+                        </div>
+                        <div class = "css-item-example borderize">
+                            <button class = "btn btn-blue darkize blockize"> .darkize </button>
+                            <button class = "btn btn-blue lightize blockize" style = "background-color: black;"> .lightize </button>
+                        </div>
+                    </div>
                     <!-- TODO:: UNCOMMENT AND FINISH THESE TWO-->
                     <!-- <div class = "css-item">
                         <div class = "css-item-words">
@@ -537,6 +550,8 @@
                         A header is often mistaken to be a navigation bar, when is actually very different. A header, is an "introductory" section in the upport portion of a page to your website. For example, you can look at the header included in the home page of this website!
                         <br><br>
                         In order to use the <a class = "linker">shahaf.css</a> header styling, make sure to assign to it the <strong>.header</strong> class.
+                        <br> 
+                        In order to use the <a class = "linker">shahaf.css</a> header <u>animation</u>, make sure to include the header id and assign id to be header: id = "header". In addition, the animation must be triggered. To trigger the animation, call the function <a class = "low-linker">headertonav()</a>. To reverse the animation and bring the header element back to its original state, call the function <a class = "low-linker">navtoheader</a> within your trigger.
                         <br><br>
                         By using a header, you will have multiple optional elements that you can place in it:
                         <ul class = "font-simple">
@@ -559,7 +574,7 @@
                         Here is the correct order and elements that should be used with a header: 
                     </p>
                         <code class = "font-coder"><pre>
-                            &lt;header class = "header"&gt;
+                            &lt;header class = "header" id = "header"&gt;
                                 &lt;img src = "SOURCE" class = "logo"/&gt;
                                 &lt;h1 class = "title"&gt;TITLE TEXT&lt;/h1&gt;
                                 &lt;button class = "main-btn"&gt; BUTTON TEXT &lt;/button &gt;
@@ -568,7 +583,6 @@
                         </pre></code>
                     </p>
                 </div>
-
 
                 <!--------------------------- HIRARCHY ---------------------------->
                 <div class = "section" id = "hirarchy-section" style = "display: none;">

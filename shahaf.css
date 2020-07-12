@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(110, 124, 248) !important;
     text-decoration: none;
 }
+.low-linker {
+    color: rgb(255, 211, 90) !important;
+    text-decoration: none;
+}
 /* ------------------- BUTTONS --------------------- */
 .btn {
     border: none;
@@ -24,20 +28,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 105%;
     border-radius: 4px; 
     width: auto;
-    padding: 1.5% 6% 1.5% 6% !important;
+    padding: 1.5% 7% 1.5% 7%;
     margin: 1.5%;
     transition: 0.3s ease-in-out;
 }
 .btn:hover {
-    padding: 1.5% 7% 1.5% 7% !important;
+    /* padding: 1.5% 7% 1.5% 7%; */
+    padding-right: 7%;
+    padding-left: 7%;
     transition: all 0.3s ease-in-out;
 }
-table .btn {
+.matrix .btn {
     padding: 3% 6.5% 3% 6.5% !important;
     margin: 1.5%;
     transition: 0.3s ease-in-out;
 }
-table .btn:hover {
+.matrix .btn:hover {
     padding: 3.5% 8% 3.5% 8% !important;
     transition: all 0.3s ease-in-out;
 }
@@ -207,6 +213,12 @@ th {
 }
 .circlize {
     border-radius: 150px !important;
+}
+.darkize {
+    color: #303030;
+}
+.lightize {
+    color: rgb(242, 242, 242);
 }
 
 /* ------------------- INPUTS --------------------- */
@@ -470,4 +482,4 @@ th {
     }
 }
 
-/* ------------------------ FORMS ---------------------- */
+/* ------------------------ COLORS ---------------------- */
