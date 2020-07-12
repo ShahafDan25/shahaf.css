@@ -1,3 +1,5 @@
+// window.scrollTo(0,document.body.scrollHeight);
+
 var sidebarSliderCounter = 0;
 function slideSidebar() {
     var sidebar = document.getElementById("sidebar");

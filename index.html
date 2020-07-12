@@ -34,29 +34,31 @@
         <h3 class = "header-title" onclick = "location.replace('add.html');">shahaf.css</h3>
     </header> -->
     <body>
-        <div class = "sidebar inline inline" id = "sidebar">
+        <div class = "sidebar inline" id = "sidebar">
             <a class = "sidebar-option" onclick = "displayMe('home');"> Home </a>
             <a class = "sidebar-option" onclick = "displayMe('buttons');"> Buttons </a>
             <a class = "sidebar-option" onclick = "displayMe('tables');"> Tables </a>
             <a class = "sidebar-option" onclick = "displayMe('fonts');"> Fonts </a>
-            <a class = "sidebar-option" onclick = "displayMe('--zes');"> --IZES </a>
+            <a class = "sidebar-option" onclick = "displayMe('--izes');"> --IZES </a>
             <a class = "sidebar-option" onclick = "displayMe('inputs');"> Inputs </a>
+            <a class = "sidebar-option" onclick = "displayMe('header');"> Header </a>
         </div>
         <div class = "container container-without-sidebar inline" id = "container">
-            <div class = "introduction">
-                <img src = "attachments/shahaf-css.png" class = "shahaf-css-logo"/>
-                <h1 class = "introduction-title-text">shahaf.css</h1>
-                <button class = "go-sidebar inline" onclick = "slideSidebar();"><i class = "fa fa-bars"></i></button>
-                <p class = "introduction-description-text inline">
+            <header class = "introduction">
+                <img src = "attachments/shahaf-css.png" class = "logo"/>
+                <h1 class = "title">shahaf.css</h1>
+                <button class = "main-btn" onclick = "slideSidebar();"><i class = "fa fa-bars"></i></button>
+                <p class = "text">
                     Welcome to <a>shahaf.css</a>
                     <br><br>
                     Enjoy this CSS library and make your website's styling simpler than ever!
                 </p>
-                <!-- TODO:: 1) Add intrudtionc page 2) Add link to copy shahaf.css for their own apps 3) About us section 4) create a link for automated styling without chaning classes names-->
-            </div>
+            </header>
             <div class = "library-content">
                 <!--------------------------- HOME PAGE INTRO  ---------------------------->
                 <div class = "section" id = "home-section" style = "display: block;">
+                    <!-- TODO:: 2) Add link to copy shahaf.css for their own apps 3) About us section 4) create a link for automated styling without chaning classes names-->
+
                     <h2 class = "section-title"> Welcome ! </h2>
                     <p class = "section-description">
                         Welcome to <a class = "linker">shahaf.css</a> !
@@ -67,7 +69,7 @@
                         <br><br>
                         Our <strong>objective</strong> is to make CSS styling and programming much more conveniet and easy for all programmers and developers, by saving a great deal of time and assisting you, the developer, to avoid repeatitive CSS code.
                         <br><br>
-                        To start, <!--you can either -->install <a href = "data:shahaf.css" class = "linker">this</a> file and place it within your project's folder.
+                        To start, <!--you can either -->install <a onclick = "downloadShahafCss('shahaf.css')" class = "linker">this</a> file and place it within your project's folder.
                         <!-- Or, you can include this in each of your HTML file's head tag section --><!-- TODO:: Create a css API link -->
                         <!-- If you want, we can go ahead and create a whole website template for you! Just choose the theme colors, and enjoy free written code! --><!-- TODO:: Create an API that allws the choosing of theme colors, and will automatically create a website template in code! -->
                     </p>
@@ -296,7 +298,6 @@
                 </div>
 
                 <!--------------------------- --IZES ---------------------------->
-
                 <div class = "section" id = "--izes-section" style = "display: none;">
                     <h2 class = "section-title"> -- IZES </h2>
 
@@ -410,7 +411,7 @@
                     </div>
                 </div>
 
-                <!--------------------------- INPUTS ---------------------------->
+                <!--------------------------- INPUTS & TEXTAREA ---------------------------->
                 <div class = "section" id = "inputs-section" style = "display: none;">
                     <h2 class = "section-title"> Inputs </h2>
                     <p class = "section-description"> To refer your input element to shahaf.css, make sure to include the <strong>.input</strong> class in your input element class definition.</p>
@@ -460,6 +461,15 @@
                             <!-- TODO:: ADD MORE STYLES OF RANGE INPUT IN DIFFERENT COLORS AND CLASSES -->
                         </div> 
                     </div>
+                    <div class = "css-item">
+                        <div class = "css-item-words inlinize">
+                            <h3 class = "css-item-title">textarea</h3>
+                            <p class = "css-item-description"> Use shahaf.css to style your textarea input with the <strong>.texter</strong> shahaf.css element </p>
+                        </div>
+                        <div class = "css-item-example inlinize">
+                            <textarea class = "input texter" placeholder = " This is a textarea..."></textarea>
+                        </div> 
+                    </div>
                     <!-- TODO:: GET BACK TO RADIO BUTTONS LATER....-->
                     <!--TODO:: ADD MORE STYLES OF RANGE INPUT IN DIFFERENT COLORS AND CLASSES -->
                     <!-- <div class = "css-item">
@@ -475,9 +485,44 @@
                     </div> -->
                 </div>
 
-                <!--------------------------- TEXT AREA ---------------------------->
-
                 <!--------------------------- HEADER ---------------------------->
+                <div class = "section" id = "header-section" style = "display: none;">
+                    <h2 class = "section-title"> Header </h2>
+                    <p class = "section-description"> 
+                        A header is often mistaken to be a navigation bar, when is actually very different. A header, is an "introductory" section in the upport portion of a page to your website.
+                        <br><br>
+                        For example, you can look at the header included in the home page of this website!
+                        <br><br>
+                        By using a header, you will have multiple optional elements that you can place in it:
+                        <ul class = "font-simple">
+                            <li>
+                                The <strong>.title</strong> element is highly recommended to be included, and will likely serve as a text placement for the name of your website / business / company. 
+                            </li>
+                            <li>
+                                The <strong>.logo</strong> element is to be used to place a logo or an image at the very right of the header, with some marginalized space from the right edge.
+                            </li>
+                            <li>
+                                The <strong>.main-btn</strong> element will produce a button right beneath the title. This button can server eithe as an entry to a sidebar, a contact button, or anything that is click-triggered.
+                            </li>
+                            <li>
+                                The <strong>.text</strong> element will be right beneath the <strong>.title</strong> element with enough room on its right in case a <strong>.main-btn</strong> element is included. This element can server as q uick introduction, a welcome message, quick instructions, your slogan, etc.
+                            </li>
+                            <li>
+                                Remember that you can override each element's styling definitions with the <strong>--izes elements</strong>!
+                            </li>
+                        </ul>
+                        Here is the correct order and elements that should be used with a header: 
+                    </p>
+                        <code><pre>
+                            &lt;header class = "introduction"&gt;
+                                &lt;mg src = "attachments/shahaf-css.png" class = "logo"/&gt;
+                                &lt;h1 class = "title"&gt; shahaf.css &lt;/h1&gt;
+                                &lt;button class = "main-btn" onclick = "action" &gt; &lt; /button &gt;
+                                &lt;p class = "text"&gt; &lt;/p&gt;
+                            &lt;/header&gt;
+                        </pre></code>
+                    </p>
+                </div>
 
                 <!--------------------------- SIDEBAR ---------------------------->
 
