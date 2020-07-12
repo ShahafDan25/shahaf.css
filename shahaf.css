@@ -177,10 +177,10 @@ th {
     float: right;
 }
 .floatize-l {
-    float: left;
+    float: left !important;
 }
 .floatize-c {
-    float: center;
+    float: center !important;
 }
 .inlinize{
     width: auto !important;
@@ -302,7 +302,7 @@ th {
     border-left: 2px solid black;
 } */
 /* -------------------- HEADER -------------------- */
-header {
+.header {
     height: 100%;
     width: 100%;
     padding: 2% 6% 2% 7%;
@@ -310,16 +310,16 @@ header {
     background-color: #303030;
     color: white;
 }
-header a {
+.header a {
     color: rgb(162, 171, 255);
     text-decoration: none;
 }
-header .logo {
+.header .logo {
     float: right;
     margin-right: 15%;
     width: 9em;
 }
-header .main-btn {
+.header .main-btn {
     margin-top: 1%;
     padding: 1%;
     color: white;
@@ -328,20 +328,20 @@ header .main-btn {
     box-shadow: -3px -3px 7px black 3px 3px 7px white;
     box-shadow: -1px -1px 7px #ffffff2c, 1px 1px 5px black;
     border: none;
-    float: left;
     margin-right: 3%;
     font-size: 200%;
     cursor: pointer;
     display: inline-block !important; 
     flex-direction: row;
+    float: left;
 }
-header .title {
+.header .title {
     font-family: system, -apple-system,".SFNSText-Regular";
     margin: 0;
     color: rgb(162, 171, 255);
     font-size: 250%;
 }
-header .text {
+.header .text {
     font-family: "Gill Sans";
     font-size: 1em;
     width: 50%;

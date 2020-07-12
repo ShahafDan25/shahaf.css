@@ -42,9 +42,10 @@
             <a class = "sidebar-option" onclick = "displayMe('--izes');"> --IZES </a>
             <a class = "sidebar-option" onclick = "displayMe('inputs');"> Inputs </a>
             <a class = "sidebar-option" onclick = "displayMe('header');"> Header </a>
+            <a class = "sidebar-option" onclick = "displayMe('hirarchy');"> Hirarchy </a>
         </div>
         <div class = "container container-without-sidebar inline" id = "container">
-            <header class = "introduction">
+            <header class = "header">
                 <img src = "attachments/shahaf-css.png" class = "logo"/>
                 <h1 class = "title">shahaf.css</h1>
                 <button class = "main-btn" onclick = "slideSidebar();"><i class = "fa fa-bars"></i></button>
@@ -409,6 +410,49 @@
                             <button class = "btn btn-light circlize"> .circlize </button>
                         </div>
                     </div>
+                    
+                    <!-- TODO:: UNCOMMENT AND FINISH THESE TWO-->
+                    <!-- <div class = "css-item">
+                        <div class = "css-item-words">
+                            <h3 class = "css-item-title">.marginize</h3>
+                            <p class = "css-item-description"> 
+                                Create a margini wrapper around your HTML element by assignint to it a <strong>.marginize</strong> element with a specified value
+                                <br><br>
+                                <strong>.roundize</strong> will give your object the average corner-curvature. <br>
+                                <strong>.roundize-none</strong> will remove any curvature from your object's / container's corners <br>
+                                <strong>.roundize-low</strong> will give your object's / container's corners a rather low curvature rate. <br>
+                                <strong>.roundize-medium</strong> will give your object's / container's corners a rather medium curvature rate. <br>
+                                <strong>.roundize-high</strong> will give your object's / container's corners a rather high curvature rate. <br>
+                                <strong>.circlize</strong> will completely curve the corners of your element / container. <br>
+                            </p>
+                        </div>
+                        <div class = "css-item-example borderize">
+                            <button class = "btn btn-blue roundize-none"> .marginize </button>
+                        </div>
+                    </div>
+
+                    <div class = "css-item">
+                        <div class = "css-item-words">
+                            <h3 class = "css-item-title">.roundize & .circlize</h3>
+                            <p class = "css-item-description"> 
+                                Round the corners of you containers and elements by using the the <strong>.roundize</strong> and <strong>.circlize</strong> shahaf.css classes and will override any previous assignments! <br><br>
+                                <strong>.roundize</strong> will give your object the average corner-curvature. <br>
+                                <strong>.roundize-none</strong> will remove any curvature from your object's / container's corners <br>
+                                <strong>.roundize-low</strong> will give your object's / container's corners a rather low curvature rate. <br>
+                                <strong>.roundize-medium</strong> will give your object's / container's corners a rather medium curvature rate. <br>
+                                <strong>.roundize-high</strong> will give your object's / container's corners a rather high curvature rate. <br>
+                                <strong>.circlize</strong> will completely curve the corners of your element / container. <br>
+                            </p>
+                        </div>
+                        <div class = "css-item-example borderize">
+                            <button class = "btn btn-blue roundize-none"> .roundize-none </button>
+                            <button class = "btn btn-cyan roundize"> .roundize </button>
+                            <button class = "btn btn-purple roundize-low"> .roundize-low </button>
+                            <button class = "btn btn-pink roundize-medium"> .roundize-medium </button>
+                            <button class = "btn btn-dark roundize-high"> .roundize-high </button>
+                            <button class = "btn btn-light circlize"> .circlize </button>
+                        </div>
+                    </div> -->
                 </div>
 
                 <!--------------------------- INPUTS & TEXTAREA ---------------------------->
@@ -489,9 +533,9 @@
                 <div class = "section" id = "header-section" style = "display: none;">
                     <h2 class = "section-title"> Header </h2>
                     <p class = "section-description"> 
-                        A header is often mistaken to be a navigation bar, when is actually very different. A header, is an "introductory" section in the upport portion of a page to your website.
+                        A header is often mistaken to be a navigation bar, when is actually very different. A header, is an "introductory" section in the upport portion of a page to your website. For example, you can look at the header included in the home page of this website!
                         <br><br>
-                        For example, you can look at the header included in the home page of this website!
+                        In order to use the <a class = "linker">shahaf.css</a> header styling, make sure to assign to it the <strong>.header</strong> class.
                         <br><br>
                         By using a header, you will have multiple optional elements that you can place in it:
                         <ul class = "font-simple">
@@ -502,7 +546,7 @@
                                 The <strong>.logo</strong> element is to be used to place a logo or an image at the very right of the header, with some marginalized space from the right edge.
                             </li>
                             <li>
-                                The <strong>.main-btn</strong> element will produce a button right beneath the title. This button can server eithe as an entry to a sidebar, a contact button, or anything that is click-triggered.
+                                The <strong>.main-btn</strong> element will produce a button right beneath the title. This button can server eithe as an entry to a sidebar, a contact button, or anything that is click-triggered. Unusually, do not use the <strong>.btn</strong> shahaf.css element when assigning styling classes to this object.
                             </li>
                             <li>
                                 The <strong>.text</strong> element will be right beneath the <strong>.title</strong> element with enough room on its right in case a <strong>.main-btn</strong> element is included. This element can server as q uick introduction, a welcome message, quick instructions, your slogan, etc.
@@ -513,16 +557,52 @@
                         </ul>
                         Here is the correct order and elements that should be used with a header: 
                     </p>
-                        <code><pre>
-                            &lt;header class = "introduction"&gt;
-                                &lt;mg src = "attachments/shahaf-css.png" class = "logo"/&gt;
-                                &lt;h1 class = "title"&gt; shahaf.css &lt;/h1&gt;
-                                &lt;button class = "main-btn" onclick = "action" &gt; &lt; /button &gt;
-                                &lt;p class = "text"&gt; &lt;/p&gt;
+                        <code class = "font-coder"><pre>
+                            &lt;header class = "header"&gt;
+                                &lt;img src = "SOURCE" class = "logo"/&gt;
+                                &lt;h1 class = "title"&gt;TITLE TEXT&lt;/h1&gt;
+                                &lt;button class = "main-btn"&gt; BUTTON TEXT &lt;/button &gt;
+                                &lt;p class = "text"&gt;TEXT&lt;/p&gt;
                             &lt;/header&gt;
                         </pre></code>
                     </p>
                 </div>
+
+
+                <!--------------------------- HIRARCHY ---------------------------->
+                <div class = "section" id = "hirarchy-section" style = "display: none;">
+                    <h2 class = "section-title"> shahaf.css Hirarchy</h2>
+                    <p class = "section-description font-simple">
+                        To use the <a class = "linker">shahaf.css</a> library correctly and appropriately, each element's assigned styling elements (classes) should be assigned in a specific order:
+                    </p>
+                    <ol start = "1" class = "section-description">
+                        <li> Any Container's classes. For example: ,header, .container, .content, .section etc. </li>
+                        <li> Any element's specified class. For example: for a button element, the first class should be <strong>.btn</strong> after the button's container has been specified (if any)</li>
+                        <li> Any secondary sfiication of the specific element's styling. For example: for a button element, the first class should be <strong>.btn</strong> and the second one, that is optional, could be <strong>.btn-dark</strong> to assign styling specific for this HTML element</li>
+                        <li> Apply all <strong>--IZES</strong> elements to further style your elements and its positioning. The order of the <strong>--IZES</strong> elements does not matter.</li>
+                    </ol>
+                    <br>
+                    <p class = "section-description">
+                        For example, examine this segment of code:
+                    </p>
+                    <div class = "centrize blockize">
+                        <code class = "font-coder" >
+                            <pre style = "float: center !important;">
+                                &lt;div class = "section centrize"&gt;
+                                    &lt;button class = "btn btn-blue borderize roundize-low blockize"> Hirarchy &lt;/button&gt;
+                                    &lt;input type = "range" class = "input range-type roundize-none blockize" /&gt;
+                                &lt;/div&gt;
+                            </pre>
+                        </code>
+                        <br>
+                        <div class = "content centrize">
+                            <button class = "btn btn-blue borderize roundize-low blockize rightize"> Hirarchy </button>
+                            <input type = "range" class = "input range-type blockize" />
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <!--------------------------- SIDEBAR ---------------------------->
 

@@ -132,10 +132,12 @@ body, html {
     padding-left: 2%;
 }
 .css-item-words {
+    display: inline-flex;
     flex:7;
     padding-right: 3%;
 }
 .css-item-example {
+    display: inline-flex;
     margin-top: 0.5%;
     margin-right: 5%;
     width: 20%;
