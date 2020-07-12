@@ -27,6 +27,7 @@
         <link rel = "stylesheet" type = "text/css" href = "index.css" />
         <link rel = "stylesheet" type = "text/css" href = "shahaf.css" />
         <script src = "index.js" type = "text/javascript"></script>
+        <script src = "shahaf.js" type = "text/javascript"></script>
 
     </head>
     <!-- <header class = "header">
@@ -35,17 +36,17 @@
     </header> -->
     <body>
         <div class = "sidebar inline" id = "sidebar">
-            <a class = "sidebar-option" onclick = "displayMe('home');"> Home </a>
-            <a class = "sidebar-option" onclick = "displayMe('buttons');"> Buttons </a>
-            <a class = "sidebar-option" onclick = "displayMe('tables');"> Tables </a>
-            <a class = "sidebar-option" onclick = "displayMe('fonts');"> Fonts </a>
-            <a class = "sidebar-option" onclick = "displayMe('--izes');"> --IZES </a>
-            <a class = "sidebar-option" onclick = "displayMe('inputs');"> Inputs </a>
-            <a class = "sidebar-option" onclick = "displayMe('header');"> Header </a>
-            <a class = "sidebar-option" onclick = "displayMe('hirarchy');"> Hirarchy </a>
+            <a class = "sidebar-option" onclick = "displayMe('home'); navtoheader();" id = "sidebar-home" style = "display: none;"> Home </a>
+            <a class = "sidebar-option" onclick = "displayMe('buttons'); headertonav();"> Buttons </a>
+            <a class = "sidebar-option" onclick = "displayMe('tables'); headertonav();"> Tables </a>
+            <a class = "sidebar-option" onclick = "displayMe('fonts'); headertonav();"> Fonts </a>
+            <a class = "sidebar-option" onclick = "displayMe('--izes'); headertonav();"> --IZES </a>
+            <a class = "sidebar-option" onclick = "displayMe('inputs'); headertonav();"> Inputs </a>
+            <a class = "sidebar-option" onclick = "displayMe('header'); headertonav();"> Header </a>
+            <a class = "sidebar-option" onclick = "displayMe('hirarchy'); headertonav();"> Hirarchy </a>
         </div>
         <div class = "container container-without-sidebar inline" id = "container">
-            <header class = "header">
+            <header class = "header" id = "header">
                 <img src = "attachments/shahaf-css.png" class = "logo"/>
                 <h1 class = "title">shahaf.css</h1>
                 <button class = "main-btn" onclick = "slideSidebar();"><i class = "fa fa-bars"></i></button>
@@ -571,7 +572,7 @@
 
                 <!--------------------------- HIRARCHY ---------------------------->
                 <div class = "section" id = "hirarchy-section" style = "display: none;">
-                    <h2 class = "section-title"> shahaf.css Hirarchy</h2>
+                    <h2 class = "section-title"> Hirarchy</h2>
                     <p class = "section-description font-simple">
                         To use the <a class = "linker">shahaf.css</a> library correctly and appropriately, each element's assigned styling elements (classes) should be assigned in a specific order:
                     </p>
